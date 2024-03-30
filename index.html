@@ -4,17 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Elements</title>
+
+    <!--Add Meta tags and Meta description...-->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/css/style.css" <title>The Elements</title>
 </head>
 
 <body>
-    <h2>Computer choice:<span id="computer-choice"></span></h2>
-    <h2>My choice:<span id="my-choice"></span></h2>
-    <h2>Result:<span id="result"></span></h2>
+    <h1 class="heading">
+        <img class="logo" src="" assets/images/logo.png" alt="logo">The five Elements
+    </h1>
 
-    <button id="rock">rock</button>
-    <button id="paper">paper</button>
-    <button id="scissors">scissors</button>
+    <div class="game-area">
+        <div class="control-area">
+            <button id="rock"><i class="fas fa-gem"></i><br>rock</button>
+            <button id="paper"><i class="fas fa-solid fa-toilet-paper"></i><br>paper</button>
+            <button id="scissors"><i class="fas fa-hand-scissors"></i><br>scissors</button>
+            <button id="lizard"><i class="fas fa-hand-lizard"></i><br>lizard</button>
+            <button id="spock"><i class="fas fa-hand-spock fa-beat"></i><br>spock</button>
+        </div>
+
+
+
+        <!--
+            <div class="score-area">
+                <p class="scores">Won</p>
+                <p class="scores">Lost</p>
+           -->
+
+        <div class="answer-area">
+            <h2 class="computer">Computer choice:<span id="computer-choice"></span></h2>
+            <h2 class="my-choice">My choice:<span id="my-choice"></span></h2>
+        </div>
+
+        <div class="result">
+            <h2>Result:<span id="result"></span>
+            </h2>
+        </div>
+
+
+
+    </div>
 
     <script src="app.js" chharset="utf-8"></script>
 </body>
