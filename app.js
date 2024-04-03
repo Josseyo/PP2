@@ -48,11 +48,15 @@ function playGame(playerChoice) {
             resultDisplay.classList.add("greenText");
             playerScore++;
             playerScoreDisplay.textContent = playerScore;
+            playerScoreDisplay.classList.add("greenText");
+
             break;
         case "You lose":
             resultDisplay.classList.add("redText");
             computerScore++;
             computerScoreDisplay.textContent = computerScore;
+            computerScoreDisplay.classList.add("redText");
+
             break;
     }
 }
