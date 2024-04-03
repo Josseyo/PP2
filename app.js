@@ -40,6 +40,8 @@ function playGame(playerChoice) {
     computerDisplay.textContent = `Computer: ${computerChoice}`;
     resultDisplay.textContent = result;
 
+    resultDisplay.classList.remove("greenText", "redText");
+
 
     switch (result) {
         case "You win!":
@@ -47,7 +49,6 @@ function playGame(playerChoice) {
             playerScore++;
             playerScoreDisplay.textContent = playerScore;
             break;
-
         case "You lose":
             resultDisplay.classList.add("redText");
             computerScore++;
