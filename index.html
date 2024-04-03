@@ -13,46 +13,37 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="assets/css/style.css" <title>The Elements</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>The Elements</title>
 </head>
 
 <body>
-    <h1 class="heading">
-        <img class="logo" src="" assets/images/logo.png" alt="logo">The five Elements
-    </h1>
+    <h1 class="heading">The five Elements</h1>
+    <div class="choices">
+        <button onclick="playGame('rock')"><i class="fas fa-gem"></i><br></button>
+        <button onclick="playGame('paper')"><i class="fas fa-solid fa-toilet-paper"></i><br></button>
+        <button onclick="playGame('scissors')"><i class="fas fa-hand-scissors"></i><br></button>
+        <button onclick="playGame('lizard')"><i class="fas fa-hand-lizard"></i><br></button>
+        <button onclick="playGame('spock')"><i class="fas fa-hand-spock fa-beat"></i><br></button>
+    </div>
 
-    <div class="game-area">
-        <div class="control-area">
-            <button id="rock"><i class="fas fa-gem"></i><br>rock</button>
-            <button id="paper"><i class="fas fa-solid fa-toilet-paper"></i><br>paper</button>
-            <button id="scissors"><i class="fas fa-hand-scissors"></i><br>scissors</button>
-            <button id="lizard"><i class="fas fa-hand-lizard"></i><br>lizard</button>
-            <button id="spock"><i class="fas fa-hand-spock fa-beat"></i><br>spock</button>
-        </div>
+    <div id="computerDisplay">Computer: </div>
 
+    <div id="playerDisplay">Player: </div>
 
+    <div id="resultDisplay">Result: </div>
 
-        <!--
+    <div class="scoreDisplay">Player Score: <span id="playerScoreDisplay">0</span></div>
+
+    <div class="scoreDisplay">Computer Score: <span id="computerScoreDisplay">0</span></div>
+
+    <!--
             <div class="score-area">
                 <p class="scores">Won</p>
                 <p class="scores">Lost</p>
            -->
 
-        <div class="answer-area">
-            <h2 class="computer">Computer choice:<span id="computer-choice"></span></h2>
-            <h2 class="my-choice">My choice:<span id="my-choice"></span></h2>
-        </div>
-
-        <div class="result">
-            <h2>Result:<span id="result"></span>
-            </h2>
-        </div>
-
-
-
-    </div>
-
-    <script src="app.js" chharset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
 </body>
 
 </html>
