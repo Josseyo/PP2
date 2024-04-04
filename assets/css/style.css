@@ -37,6 +37,7 @@ h1 {
 #computerDisplay {
     font-size: 2.5rem;
     color: aqua;
+    margin: 15px 0;
 }
 
 #resultDisplay {
@@ -46,6 +47,7 @@ h1 {
 
 .scoreDisplay {
     font-size: 2.5rem;
+    margin: 15px 0;
 }
 
 
@@ -55,4 +57,18 @@ h1 {
 
 .redText {
     color: red;
+}
+
+.redText {
+    color: ;
+}
+
+#How-to-play {
+    font-size: 1.6rem;
+    color: rgb(9, 4, 50);
+    min-width: 500px;
+    margin: 30px 10px;
+    padding: 2em;
+    background-color: aqua;
+    text-align: left;
 }
