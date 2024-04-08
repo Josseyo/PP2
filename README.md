@@ -30,10 +30,13 @@ Yes, you can.
 
 ```
 
-**Anything more?**
+**Resources Contribute**
 
-Y
+Bro Code, javascript full cours for free (2024),
+https://youtu.be/lfmg-EJ8gm4?si=8UWH-9nR20S0VXzS
+
+
+[![Bro Code, javascript full cours](https://img.youtube.com/vi/lfmg-EJ8gm4/maxresdefault.jpg)](https://www.youtube.com/watch?v=lfmg-EJ8gm4)
 
 ---
 
-Happy coding!

@@ -1,8 +1,8 @@
 // The elements
-const choices = ["rock", "paper", "scissors", "lizard", "spock"];
+const choices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 const playerDisplay = document.getElementById("playerDisplay");
-const computerDisplay = document.getElementById('computerDisplay');
-const resultDisplay = document.getElementById('resultDisplay');
+const computerDisplay = document.getElementById("computerDisplay");
+const resultDisplay = document.getElementById("resultDisplay");
 const playerScoreDisplay = document.getElementById("playerScoreDisplay");
 const computerScoreDisplay = document.getElementById("computerScoreDisplay");
 let playerScore = 0;
@@ -17,27 +17,27 @@ function playGame(playerChoice) {
     } else {
         switch (playerChoice) {
             case "rock":
-                result = (computerChoice === "scissors" || computerChoice === "lizard") ? "You win!" : "You lose :(";
+                result = (computerChoice === "Scissors" || computerChoice === "Lizard") ? "You win!" : "You lose:(";
                 break;
             case "paper":
-                result = (computerChoice === "rock" || computerChoice === "spock") ? "You win!" : "You lose :(";
+                result = (computerChoice === "Rock" || computerChoice === "Spock") ? "You win!" : "You lose:(";
                 break;
             case "scissors":
-                result = (computerChoice === "paper" || computerChoice === "lizard") ? "You win!" : "You lose :(";
+                result = (computerChoice === "Paper" || computerChoice === "Lizard") ? "You win!" : "You lose:(";
                 break;
             case "lizard":
-                result = (computerChoice === "spock" || computerChoice === "paper") ? "You win!" : "You lose :(";
+                result = (computerChoice === "Spock" || computerChoice === "Paper") ? "You win!" : "You lose:(";
                 break;
             case "spock":
-                result = (computerChoice === "rock" || computerChoice === "scissors") ? "You win!" : "You lose :(";
+                result = (computerChoice === "Rock" || computerChoice === "Scissors") ? "You win!" : "You lose:(";
                 break;
             default:
                 result = "Invalid choice!";
         }
     }
 
-    playerDisplay.textContent = `You: ${playerChoice}`;
-    computerDisplay.textContent = `The Bar: ${computerChoice}`;
+    playerDisplay.textContent = ` ${playerChoice}`;
+    computerDisplay.textContent = ` ${computerChoice}`;
     resultDisplay.textContent = result;
 
     resultDisplay.classList.remove("greenText", "redText");
@@ -51,7 +51,7 @@ function playGame(playerChoice) {
             playerScoreDisplay.classList.add("greenText");
 
             break;
-        case "You lose :(":
+        case "You lose:(":
             resultDisplay.classList.add("redText");
             computerScore++;
             computerScoreDisplay.textContent = computerScore;

@@ -18,42 +18,70 @@
 </head>
 
 <body>
-    <h1 class="heading">THE BAR WARS</h1>
+    <!--semantic html: 
+        html
+        Body
+        Header: navigation;
+        Main: Game area with Alternatives, display choice; user choice / computer choice, Result; win/lose/tie, Game score; number wins, number losses
+        Footer: contains the rules -->
+    <header>
+        <h1 class="heading">THE BAR WARS</h1>
+    </header>
+    <main>
 
-    <div class="choices">
-        <button onclick="playGame('rock')" title="Rock crushes Lizard and Scissors"><i
-                class="fas fa-gem"></i><br></button>
-        <button onclick="playGame('paper')" title="Paper disproves Spock and covers Rock"><i
-                class="fas fa-solid fa-toilet-paper"></i><br></button>
-        <button onclick="playGame('scissors')" title="Scissors decapitates Lizard and cuts Paper"><i
-                class="fas fa-hand-scissors"></i><br></button>
-        <button onclick="playGame('lizard')" title="Lizard eats Paper and poisons Spock"><i
-                class="fas fa-hand-lizard"></i><br></button>
-        <button onclick="playGame('spock')" title="Spock vaporizes Rock and smashes Scissors"><i
-                class="fas fa-hand-spock fa-beat"></i><br></button>
-    </div>
+        <section id="gameboard">
+            <section id="choices">
+                <button onclick="playGame('rock')" title="Rock crushes Lizard and Scissors"><i
+                        class="fas fa-gem"></i><br></button>
+                <button onclick="playGame('paper')" title="Paper disproves Spock and covers Rock"><i
+                        class="fas fa-solid fa-toilet-paper"></i><br></button>
+                <button onclick="playGame('scissors')" title="Scissors decapitates Lizard and cuts Paper"><i
+                        class="fas fa-hand-scissors"></i><br></button>
+                <button onclick="playGame('lizard')" title="Lizard eats Paper and poisons Spock"><i
+                        class="fas fa-hand-lizard"></i><br></button>
+                <button onclick="playGame('spock')" title="Spock vaporizes Rock and smashes Scissors"><i
+                        class="fas fa-hand-spock fa-beat"></i><br></button>
+
+            </section>
+            <br><br>
+            <div id="displayContainer">
+                <div id="playerDisplay"></div>
+
+                <div id="computerDisplay"></div>
+            </div>
 
 
-    <div id="playerDisplay">You: </div>
-    <div id="computerDisplay">The bar: </div>
-    <div id="resultDisplay">Result: </div>
-
-    <div class="scoreDisplay">Your Score: <span id="playerScoreDisplay">0</span></div>
-
-    <div class="scoreDisplay">Bar's Score: <span id="computerScoreDisplay">0</span></div>
+            <div id="resultContainer">
+                <div id="resultDisplay">Result</div>
+            </div>
 
 
+            <div id="scoreContainer">
+                <div class="scoreDisplay" style="color: magenta;"><span id="playerScoreDisplay">0</span>
+                </div>
+                <div id="divider">–</div>
+                <div class="scoreDisplay"><span id="computerScoreDisplay">0</span>
+                </div>
+            </div>
+        </section>
+        <br>
+        <div id="How-to-play">
+            <h2>How to play</h2>
+            <ul>
+                <br>
+                <li>Rock crushes Lizard and Scissors</li>
+                <li>Lizard eats Paper and poisons Spock</li>
+                <li>Spock vaporizes Rock and smashes Scissors</li>
+                <li>Scissors decapitates Lizard and cuts Paper</li>
+                <li>Paper disproves Spock and covers Rock</li>
+            </ul>
+        </div>
 
-    <div id="How-to-play">
-        <h2>How to play</h2>
-        <ul>
-            <li>Rock crushes Lizard and Scissors</li>
-            <li>Lizard eats Paper and poisons Spock</li>
-            <li>Spock vaporizes Rock and smashes Scissors</li>
-            <li>Scissors decapitates Lizard and cuts Paper</li>
-            <li>Paper disproves Spock and covers Rock</li>
-        </ul>
-    </div>
+    </main>
+    <footer>
+
+    </footer>
+
 
     <!--
             <div class="score-area">

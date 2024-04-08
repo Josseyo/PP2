@@ -1,53 +1,119 @@
+/*root*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
 body {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    margin: 0;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: yellow;
-    background-color: rgb(9, 4, 50);
+    background: rgb(9, 4, 50);
 }
 
 h1 {
     font-size: 5rem;
     color: yellow;
-}
-
-.choices {
-    margin-bottom: 30px;
-}
-
-.choices button {
-    font-size: 7rem;
-    min-width: 120px;
-    margin: 10px 10px;
-    padding: 0.3em;
-    border-radius: 250px;
-    background-color: yellow;
-    cursor: pointer;
-    transition: background-color 0.5s ease;
-}
-
-.choices button:hover {
-    background: aqua;
-}
-
-#playerDisplay,
-#computerDisplay {
-    font-size: 2.5rem;
-    color: aqua;
-    margin: 15px 0;
-}
-
-#resultDisplay {
-    font-size: 5rem;
+    text-align: center;
     margin: 30px 0;
 }
 
-.scoreDisplay {
+#choicesContainer {
+    display: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#choices {
+    margin: auto;
+    padding: 1rem;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#choices button {
+    font-size: 4.5rem;
+    min-width: min-content;
+    margin: auto;
+    padding: 0.5em;
+    border-radius: 250px;
+    background-color: yellow;
+    border: solid rgb(9, 4, 50) 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+
+}
+
+#choices button:hover {
+    background: magenta;
+    border: solid yellow 1rem;
+
+    font-size: 4rem;
+    min-width: min-content;
+    margin: auto;
+    padding: 0.5em;
+}
+
+#displayContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+
+#playerDisplay {
     font-size: 2.5rem;
-    margin: 15px 0;
+    color: magenta;
+    margin: auto;
+    padding: 1rem;
+}
+
+#divider {
+    font-size: 2.5rem;
+    color: aqua;
+    margin: auto;
+    padding: 1rem;
+}
+
+#computerDisplay {
+    font-size: 2.5em;
+    color: yellow;
+    margin: auto;
+    padding: 1rem;
+}
+
+#resultContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+#resultDisplay {
+    font-size: 3em;
+    ;
+    margin: auto;
+    padding: 1rem;
+}
+
+#scoreContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.scoreDisplay {
+    font-size: 3.5em;
+    margin: auto;
+    padding: 1rem;
+
 }
 
 
@@ -59,16 +125,19 @@ h1 {
     color: red;
 }
 
-.redText {
-    color: ;
+.orangeText {
+    color: orange;
 }
+
 
 #How-to-play {
     font-size: 1.6rem;
     color: rgb(9, 4, 50);
-    min-width: 500px;
-    margin: 30px 10px;
-    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+    padding: 1.5em;
     background-color: aqua;
     text-align: left;
 }
+
+/*--Media queries */
