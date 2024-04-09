@@ -35,7 +35,7 @@ function playGame(playerChoice) {
                 result = "Invalid choice!";
         }
     }
-
+    console.log("it's a tie...");
     playerDisplay.textContent = ` ${playerChoice}`;
     computerDisplay.textContent = ` ${computerChoice}`;
     resultDisplay.textContent = result;
