@@ -17,25 +17,26 @@ function playGame(playerChoice) {
     } else {
         switch (playerChoice) {
             case "rock":
-                result = (computerChoice === "Scissors" || computerChoice === "Lizard") ? "You win!" : "You lose:(";
+                result = (computerChoice === "scissors" || computerChoice === "lizard") ? "You win!" : "You lose:(";
                 break;
             case "paper":
-                result = (computerChoice === "Rock" || computerChoice === "Spock") ? "You win!" : "You lose:(";
+                result = (computerChoice === "rock" || computerChoice === "spock") ? "You win!" : "You lose:(";
                 break;
             case "scissors":
-                result = (computerChoice === "Paper" || computerChoice === "Lizard") ? "You win!" : "You lose:(";
+                result = (computerChoice === "paper" || computerChoice === "lizard") ? "You win!" : "You lose:(";
                 break;
             case "lizard":
-                result = (computerChoice === "Spock" || computerChoice === "Paper") ? "You win!" : "You lose:(";
+                result = (computerChoice === "spock" || computerChoice === "paper") ? "You win!" : "You lose:(";
                 break;
             case "spock":
-                result = (computerChoice === "Rock" || computerChoice === "Scissors") ? "You win!" : "You lose:(";
+                result = (computerChoice === "rock" || computerChoice === "scissors") ? "You win!" : "You lose:(";
                 break;
             default:
                 result = "Invalid choice!";
         }
     }
-    console.log("it's a tie...");
+
+
     playerDisplay.textContent = ` ${playerChoice}`;
     computerDisplay.textContent = ` ${computerChoice}`;
     resultDisplay.textContent = result;

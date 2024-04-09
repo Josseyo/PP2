@@ -34,8 +34,6 @@ h2 {
     margin-top: 30px;
     margin-bottom: 20px;
     letter-spacing: 10px;
-    text-decoration: wavy chartreuse;
-    padding-left: 10px;
 
 }
 
@@ -88,12 +86,12 @@ h2 {
     padding: 1rem;
 }
 
-#divider {
+/*#divider {
     font-size: 2.5rem;
     color: aqua;
     margin: auto;
     padding: 1rem;
-}
+}*/
 
 #computerDisplay {
     font-size: 2.5em;
@@ -110,8 +108,7 @@ h2 {
 }
 
 #resultDisplay {
-    font-size: 3em;
-    ;
+    font-size: 2.5em;
     margin: auto;
     padding: 1rem;
 }
@@ -126,30 +123,24 @@ h2 {
     font-size: 3.5em;
     margin: auto;
     padding: 1rem;
-
 }
 
 
 .greenText {
-    color: rgb(54, 243, 6);
+    color: rgb(144, 225, 3);
 }
 
 .redText {
     color: red;
 }
 
-.orangeText {
-    color: orange;
-}
-
-
 #How-to-play {
     font-size: 1.6rem;
     color: rgb(9, 4, 50);
-    max-width: 800px;
+
     margin: auto;
     margin-top: 30px;
-    padding: 1.5em;
+    padding: 2em;
     background-color: yellow;
     text-align: left;
     letter-spacing: 0.1em;
