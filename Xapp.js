@@ -1,4 +1,5 @@
-const holder = ["rock", "paper", "scissors", "lizard", "spock"];
+// The elements
+const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 const playerDisplay = document.getElementById("playerDisplay");
 const computerDisplay = document.getElementById("computerDisplay");
 const resultDisplay = document.getElementById("resultDisplay");
@@ -7,16 +8,8 @@ const computerScoreDisplay = document.getElementById("computerScoreDisplay");
 let playerScore = 0;
 let computerScore = 0;
 
-const options = document.querySelectorAll(".button");
-options.forEach((option) => {
-    option.addEventListener("click", function () {
-        const playerChoice = option.getAttribute("aria-label");
-        playGame(playerChoice);
-    });
-});
-
 function playGame(playerChoice) {
-    const computerChoice = holder[Math.floor(Math.random() * 5)];
+    const computerChoice = choices[Math.floor(Math.random() * 5)];
     let result = "";
 
     if (playerChoice === computerChoice) {
@@ -43,28 +36,28 @@ function playGame(playerChoice) {
         }
     }
 
-    display(playerChoice, computerChoice, result);
-}
 
-function display(player, computer, decision) {
-    playerDisplay.textContent = player;
-    computerDisplay.textContent = computer;
-    resultDisplay.textContent = decision;
+    playerDisplay.textContent = ` ${playerChoice}`;
+    computerDisplay.textContent = ` ${computerChoice}`;
+    resultDisplay.textContent = result;
 
     resultDisplay.classList.remove("greenText", "redText");
 
-    switch (decision) {
+
+    switch (result) {
         case "You win!":
             resultDisplay.classList.add("greenText");
             playerScore++;
             playerScoreDisplay.textContent = playerScore;
             playerScoreDisplay.classList.add("greenText");
+
             break;
         case "You lose:(":
             resultDisplay.classList.add("redText");
             computerScore++;
             computerScoreDisplay.textContent = computerScore;
             computerScoreDisplay.classList.add("redText");
+
             break;
     }
 }

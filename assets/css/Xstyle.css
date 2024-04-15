@@ -29,31 +29,12 @@ h1 {
 
 h2 {
     font-size: 3rem;
-
+    color: rgb(9, 4, 50);
     text-align: center;
     margin-top: 30px;
     margin-bottom: 20px;
     letter-spacing: 10px;
 
-}
-
-a {
-    color: magenta;
-    /* Change the text color */
-    font-size: 1em;
-    text-decoration: none;
-    margin: auto;
-    position: absolute;
-    /* Remove the underline */
-}
-
-a:hover {
-    text-decoration: solid aqua;
-    /* Change color on hover */
-}
-
-ul {
-    list-style: none
 }
 
 /*#choicesContainer {
@@ -63,33 +44,30 @@ ul {
     padding: 1rem;
 }*/
 
-#holder {
+#choices {
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
 }
 
-.button {
-    font-size: 2rem;
-    width: 150px;
-    height: 150px;
+#choices button {
+    font-size: 4.5rem;
+    min-width: min-content;
     margin: auto;
     padding: 0.5em;
-    border-radius: 50%;
-    color: #000;
+    border-radius: 250px;
     background-color: yellow;
     border: solid rgb(9, 4, 50) 0.10em;
     cursor: pointer;
     transition: background-color 0.5s ease;
+
 }
 
-.button:hover {
+#choices button:hover {
     background: magenta;
     border: solid yellow 1rem;
 
-    font-size: 2.4rem;
+    font-size: 4rem;
     min-width: min-content;
     margin: auto;
     padding: 0.5em;
@@ -156,10 +134,10 @@ ul {
     color: red;
 }
 
-#rules {
+#How-to-play {
     font-size: 1.6rem;
     color: rgb(9, 4, 50);
-    margin-left: 3rem;
+
     margin: auto;
     margin-top: 30px;
     padding: 2em;

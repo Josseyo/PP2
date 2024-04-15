@@ -65,3 +65,88 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description of your website">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>The Elements</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="heading">THE BAR WARS</h1>
+    </header>
+    <main>
+        <!--  <section id="gameboard">
+            <section id="choices"> -->
+        <div id="gameboard">
+
+            <button class="choiceBtn">Rock</button>
+            <button class="choiceBtn">Paper</button>
+            <button class="choiceBtn">Scissors</button>
+            <button class="choiceBtn">Lizard</button>
+            <button class="choiceBtn">Spock</button>
+
+            <!--  <button class="optionBtn" onclick="playGame('rock')" title="Rock crushes Lizard and Scissors"><i
+                        class="fas fa-gem"></i><br>Rock</button>
+                <button class="optionBtn" onclick="playGame('paper')" title="Paper disproves Spock and covers Rock"><i
+                        class="fas fa-solid fa-toilet-paper"></i><br>Paper</button>
+                <button class="optionBtn" onclick="playGame('scissors')" title="Scissors decapitates Lizard and cuts Paper"><i
+                        class="fas fa-hand-scissors"></i><br>Scissors</button>
+                <button class="optionBtn" onclick="playGame('lizard')" title="Lizard eats Paper and poisons Spock"><i
+                        class="fas fa-hand-lizard"></i><br>Lizard</button>
+                <button class="optionBtn" onclick="playGame('spock')" title="Spock vaporizes Rock and smashes Scissors"><i
+                        class="fas fa-hand-spock fa-beat"></i><br>Spock</button> -->
+        </div>
+        <!-- </section> -->
+
+        <div id="displayContainer">
+
+            <h2 class="displaytext" id="playerDisplay">Player: </h2>
+            <h2 class="displaytext" id="computerDisplay">Computer: </h2>
+
+            <!--<div id="computerDisplay"></div>
+            </div>-->
+
+            <div id="resultContainer">
+                <h2 class="displaytext" id="resultDisplay">Result: </h2>
+            </div>
+
+            <div id="scoreContainer">
+                <div class="scoreDisplay" style="color: magenta;"><span id="playerScoreDisplay">0</span></div>
+                <div class="scoreDisplay"><span id="computerScoreDisplay">0</span></div>
+            </div>
+            </section>
+            <div id="How-to-play">
+                <h2>How to play</h2>
+                <ul>
+                    <li>ROCK crushes LIZARD and SCISSORS</li>
+                    <li>LIZARD eats PAPER and poisons SPOCK</li>
+                    <li>SPOCK vaporizes ROCK and smashes SCISSORS</li>
+                    <li>SCISSORS decapitates LIZARD and cuts PAPER</li>
+                    <li>PAPER disproves SPOCK and covers ROCK</li>
+                </ul>
+            </div>
+    </main>
+    <footer>
+        <!-- Add your footer content here -->
+    </footer>
+    <script src="app.js" charset="utf-8"></script>
+</body>
+
+</html>

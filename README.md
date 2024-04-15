@@ -4,33 +4,23 @@ Welcome
 
 ------
 
-## FAQ about the uptime script
+## Fixes
 
-**Why have you added this script?**
+**Just because I can:**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+--Include a loop
+Buttons using an event listener
+https://sebhastian.com/rock-paper-scissors-javascript/
 
-**How will this affect me?**
+--Break things down into two function
+--Style edited
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. 
-
-```
 
 **Resources Contribute**
+
+Buttons using an event listener
+-- https://sebhastian.com/rock-paper-scissors-javascript/
+-- https://fjolt.com/articlejavascript-multiple-elements-addeventlistener
 
 Bro Code, javascript full cours for free (2024),
 https://youtu.be/lfmg-EJ8gm4?si=8UWH-9nR20S0VXzS
