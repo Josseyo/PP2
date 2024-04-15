@@ -69,20 +69,25 @@ ul {
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
+
+}
+
+.fas {
+    font-size: 50px;
 }
 
 .button {
     font-size: 2rem;
-    width: 150px;
-    height: 150px;
-    margin: auto;
+    width: 120px;
+    height: 120px;
+    margin: auto 10px;
     padding: 0.5em;
     border-radius: 50%;
     color: #000;
     background-color: yellow;
     border: solid rgb(9, 4, 50) 0.10em;
     cursor: pointer;
-    transition: background-color 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .button:hover {
