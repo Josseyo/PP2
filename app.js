@@ -55,7 +55,7 @@ function display(player, computer, decision) {
     computerDisplay.textContent = computer;
     resultDisplay.textContent = decision;
 
-    resultDisplay.classList.remove("greenText", "redText");
+    resultDisplay.classList.remove("magentaText", "aquaText");
 
     switch (decision) {
         case "You win!":
