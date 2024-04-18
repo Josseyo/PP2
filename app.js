@@ -7,6 +7,10 @@ const computerScoreDisplay = document.getElementById("computerScoreDisplay");
 let playerScore = 0;
 let computerScore = 0;
 
+//let currentRound = 1;
+//const totalRounds = 5;
+//const roundDisplay = document.getElementById('round');
+
 const options = document.querySelectorAll(".button");
 options.forEach((option) => {
     option.addEventListener("click", function () {
@@ -55,16 +59,31 @@ function display(player, computer, decision) {
 
     switch (decision) {
         case "You win!":
-            resultDisplay.classList.add("greenText");
+            resultDisplay.classList.add("magentaText");
             playerScore++;
             playerScoreDisplay.textContent = playerScore;
-            playerScoreDisplay.classList.add("greenText");
+            playerScoreDisplay.classList.add("magentaText");
             break;
         case "You lose:(":
-            resultDisplay.classList.add("redText");
+            resultDisplay.classList.add("aquaText");
             computerScore++;
             computerScoreDisplay.textContent = computerScore;
-            computerScoreDisplay.classList.add("redText");
+            computerScoreDisplay.classList.add("aquaText");
             break;
     }
+
+
+    //function playRound(playerChoice) {
+    //  if (currentRound <= totalRounds) {
+    //    Existing playRound logic...
+    //      (Determining the winner of the round and updating scores)
+    //
+    //          roundDisplay.textContent = `Round: ${currentRound} of ${totalRounds}`;
+    //        currentRound++;
+    //  }
+
+    //if (currentRound > totalRounds) {
+    //  concludeGame(); // Call this function when all rounds are completed
+    //}
+    //}
 }
